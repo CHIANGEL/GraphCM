@@ -1,0 +1,12 @@
+__pycache__
+.vscode
+*.png
+*.sh
+*.err
+*.out
+*.list
+*/summary/*
+*/results/*
+*/log/*
+*/models/*
+whl/*
