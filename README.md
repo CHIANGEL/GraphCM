@@ -22,7 +22,7 @@ This is the pytorch implementation of GraphCM proposed in the paper: [A Graph-En
 
 After data pre-processing, we can put all the generated files into ```./data/dataset/``` folder as input files for GraphCM. Demo input files are available under the ```./data/demo/``` directory. 
 
-The format of train & dev & test & label input files is as follows:
+The format of train & valid & test & label input files is as follows:
 
 - Each line: ```<session id><tab><query id><tab>[<document ids>]<tab>[<vtype ids>]<tab>[<clicks infos>]<tab>[<relevance>]```
 
