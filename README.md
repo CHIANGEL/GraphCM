@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This is the pytorch implementation of GraphCM proposed in the paper: [A Neural Click Model for Web Search. WWW 2016](https://dl.acm.org/doi/10.1145/3404835.3462895).
+This is the pytorch implementation of GraphCM proposed in the paper: [A Graph-Enhanced Click Model for Web Search. SIGIR 2021](https://dl.acm.org/doi/10.1145/3404835.3462895).
 
 ### Requirements
 
@@ -25,3 +25,21 @@ After data pre-processing, we can put all the generated files into ```./data/dat
 The format of train & dev & test & label input files is as follows:
 
 - Each line: ```<session id><tab><query id><tab>[<document ids>]<tab>[<vtype ids>]<tab>[<clicks infos>]<tab>[<relevance>]```
+
+### Quick Start
+
+We provide quick start command in ```./run.sh```. Note that input files that are related to graph modules are not provided in this repo. You can genenrate graph-related input files using data preprocess files in the ```./data_preprocess/``` fold.
+
+### Citation
+
+If you find the resources in this repo useful, please cite our work.
+
+```
+@inproceedings{lin2021graph,
+  title={A Graph-Enhanced Click Model for Web Search},
+  author={Lin, Jianghao and Liu, Weiwen and Dai, Xinyi and Zhang, Weinan and Li, Shuai and Tang, Ruiming and He, Xiuqiang and Hao, Jianye and Yu, Yong},
+  booktitle={Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={1259--1268},
+  year={2021}
+}
+```
